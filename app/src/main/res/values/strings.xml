@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Travel Footprint Quiz</string>
+
+    <!-- Start menu -->
+    <string name="quiz_description">Travel Footprint Quiz allows you to test your sustainable knowledge! Let\'s do it friend!</string>
+    <string name="stateName">Traveler\'s name</string>
+    <string name="travelerName">Write your name, friend!</string>
+
+    <!-- Travel question 1 - Number of world travelers in 2015 -->
+
+    <string name="question1_label">Travel question 1 - Number of world travelers</string>
+    <string name="question1">How many tourism arrivals happened worlwide in 2015?</string>
+    <string name="question1_correct" translatable="false">1.2 billion</string>
+    <string name="question1_incorrectA" translatable="false">750 million</string>
+    <string name="question1_incorrectB" translatable="false">500 million</string>
+    <string name="question1_incorrectC" translatable="false">186 million</string>
+
+    <!-- Travel question 2 - Water footprint per year of American male -->
+
+    <string name="question2_label">Travel question 2 - Water footprint</string>
+    <string name="question2">What is the average water footprint per year (in cubic meter) of a American male that is an average meat consumer?</string>
+    <string name="question2_correct" translatable="false">1200 m3</string>
+    <string name="question2_incorrectA" translatable="false">150 m3</string>
+    <string name="question2_incorrectB" translatable="false">100 m3</string>
+    <string name="question2_incorrectC" translatable="false">50 m3</string>
+
+    <!-- Travel question 3 - Carbon footprint per year of an European -->
+
+    <string name="question3_label">Question 3 - European Carbon Footprint</string>
+    <string name="question3">What is the average European carbon footprint in CO2 emissions (metric tons)?</string>
+    <string name="question3_correct" translatable="false">10 tons</string>
+    <string name="question3_incorrectA" translatable="false">0.1 tons</string>
+    <string name="question3_incorrectB" translatable="false">1000 tons</string>
+    <string name="question3_incorrectC" translatable="false">19 tons</string>
+
+    <!-- Travel question 4 - Carbon footprint per year of an American -->
+
+    <string name="question4_label">Question 4 - American Carbon Footprint</string>
+    <string name="question4">What is the average American carbon footprint in CO2 emissions (metric tons)?</string>
+    <string name="question4_correct" translatable="false">19 tons</string>
+    <string name="question4_incorrectA" translatable="false">10 tons</string>
+    <string name="question4_incorrectB" translatable="false">100 tons</string>
+    <string name="question4_incorrectC" translatable="false">1 ton</string>
+
+    <!-- Travel question 5 - Carbon footprint of a flight -->
+
+    <string name="question5_label">Question 5 - Carbon Footprint of a flight </string>
+    <string name="question5">How many metric tons of carbon dioxide takes round-trip flight from New York to Europe?</string>
+    <string name="question5_correct" translatable="false">2-3 tons</string>
+    <string name="question5_incorrectA" translatable="false">0.1-0.2 tons</string>
+    <string name="question5_incorrectB" translatable="false">0.5-0.7 tons</string>
+    <string name="question5_incorrectC" translatable="false">1-1.5 tons</string>
+
+    <!-- Travel question 6 - How many sustainable destinations are in the world, according to Green Destinations Association? -->
+    <string name="question6_label">Question 6 - How many sustainable destinations are in the world, according to Green Destinations Association? </string>
+    <string name="writeAnswerHere" translatable="false">Write the number here</string>
+
+    <!-- Final messages -->
+    <string name="finalScore">Final Score</string>
+    <string name="tag_answer_wrong" translatable="false">wrong_answer</string>
+    <string name="tag_answer_correct" translatable="false">correct_answer</string>
+    <string name="final_score_message"> %s! Your score: %d/%d points.</string>
+    <string name="message1">There is a lot to be done... Check our project Sustainable Destinations to know more!</string>
+    <string name="message2">You still need to improve... Follow our project Sustainable Destinations!</string>
+    <string name="message3">Good, but you still need to learn more about our envirnomental impact, join Sustainable Destinations!</string>
+    <string name="message4">Congrats! You are a eco-friendly person! Join our project Sustainable Destinations!</string>
+
+</resources>

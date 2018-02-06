@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/match_parent"
+    android:layout_height="@dimen/match_parent"
+    tools:context="com.example.android.travelfootprintquiz.MainActivity">
+
+    <ScrollView
+        android:layout_width="@dimen/match_parent"
+        android:layout_height="@dimen/wrap_content"
+        android:background="@drawable/background_pixabay">
+
+        <LinearLayout
+            android:layout_width="@dimen/match_parent"
+            android:layout_height="@dimen/wrap_content"
+            android:layout_margin="@dimen/margin6dp"
+            android:orientation="vertical">
+
+            <!-- Travel Footprint Quiz -->
+            <TextView
+                android:layout_width="@dimen/match_parent"
+                android:layout_height="@dimen/wrap_content"
+                android:layout_marginVertical="@dimen/margin12dp"
+                android:text="@string/quiz_description"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_18sp" />
+
+            <!-- Traveler Name Label -->
+            <TextView
+                android:layout_width="@dimen/match_parent"
+                android:layout_height="@dimen/wrap_content"
+                android:layout_marginTop="@dimen/margin12dp"
+                android:background="@color/light_green"
+                android:padding="@dimen/margin8dp"
+                android:text="@string/stateName"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <!-- Traveler Name Input -->
+            <EditText
+                android:id="@+id/name_box"
+                android:layout_width="@dimen/match_parent"
+                android:layout_height="@dimen/wrap_content"
+                android:layout_marginBottom="@dimen/margin12dp"
+                android:background="@color/soft_green"
+                android:hint="@string/travelerName"
+                android:inputType="textCapWords"
+                android:padding="@dimen/margin8dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <!-- TRAVEL QUESTION 1 -->
+            <LinearLayout
+                android:layout_width="@dimen/match_parent"
+                android:layout_height="@dimen/wrap_content"
+                android:layout_marginVertical="@dimen/margin12dp"
+                android:background="@color/soft_green"
+                android:orientation="vertical">
+
+                <!-- Label of the question -->
+                <TextView
+                    android:id="@+id/question_1"
+                    android:layout_width="@dimen/match_parent"
+                    android:layout_height="@dimen/wrap_content"
+                    android:background="@color/light_green"
+                    android:padding="@dimen/margin8dp"
+                    android:text="@string/question1_label"
+                    android:textSize="@dimen/text_size_12sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/match_parent"
+                    android:layout_height="@dimen/wrap_content"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:background="@color/light_green"
+                    android:padding="@dimen/margin6dp"
+                    android:src="@drawable/drawableq1" />
+
+                <!-- Question and options to choose -->
+                <TextView
+                    android:layout_width="@dimen/match_parent"
+                    android:layout_height="@dimen/wrap_content"
+                    android:padding="@dimen/margin8dp"
+                    android:text="@string/question1"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroupQuestion1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="1">
+
+                    <RadioButton
+                        android:layout_width="@dimen/match_parent"
+                        android:layout_height="@dimen/wrap_content"
+                        android:onClick="AssignScore"
+                        android:tag="@string/tag_answer_wrong"
+                        android:text="@string/question1_incorrectA" />
+
+                    <RadioButton
+                        android:layout_width="@dimen/match_parent"
+                        android:layout_height="@dimen/wrap_content"
+                        android:onClick="AssignScore"
+                        android:tag="@string/tag_answer_wrong"
+                        android:text="@string/question1_incorrectB" />
+
+                    <RadioButton
+                        android:layout_width="@dimen/match_parent"
+                        android:layout_height="@dimen/wrap_content"
+                        android:onClick="AssignScore"
+                        android:tag="@string/tag_answer_wrong"
+                        android:text="@string/question1_incorrectC" />
+
+                    <RadioButton
+                        android:layout_width="@dimen/match_parent"
+                        android:layout_height="@dimen/wrap_content"
+                        android:onClick="AssignScore"
+                        android:tag="@string/tag_answer_correct"
+                        android:text="@string/question1_correct" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <!-- TRAVEL QUESTION 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/margin12dp"
+                android:background="@color/soft_green"
+                android:orientation="vertical">
+
+                <!-- Label of the question -->
+                <TextView
+                    android:layout_width="@dimen/match_parent"
+                    android:layout_height="@dimen/wrap_content"
+                    android:background="@color/light_green"
+                    android:padding="@dimen/margin8dp"
+                    android:text="@string/question2_label"
+                    android:textSize="@dimen/text_size_12sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/match_parent"
+                    android:layout_height="@dimen/wrap_content"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:background="@color/light_green"
+                    android:padding="@dimen/margin6dp"
+                    android:src="@drawable/drawableq2" />
+
+                <!-- Question and options to choose -->
+                <TextView
+                    android:layout_width="@dimen/match_parent"
+                    android:layout_height="@dimen/wrap_content"
+                    android:padding="@dimen/margin8dp"
+                    android:text="@string/question2"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="2">
+
+                    <RadioButton
+                        android:layout_width="@dimen/match_parent"
+                        android:layout_height="@dimen/wrap_content"
+                        android:onClick="AssignScore"
+                        android:tag="@string/tag_answer_correct"
+                        android:text="@string/question2_correct" />
+
+                    <RadioButton
+                        android:layout_width="@dimen/match_parent"
+                        android:layout_height="@dimen/wrap_content"
+                        android:onClick="AssignScore"
+                        android:tag="@string/tag_answer_wrong"
+                        android:text="@string/question2_incorrectA" />
+
+                    <RadioButton
+                        android:layout_width="@dimen/match_parent"
+                        android:layout_height="@dimen/wrap_content"
+                        android:onClick="AssignScore"
+                        android:tag="@string/tag_answer_wrong"
+                        android:text="@string/question2_incorrectB" />
+
+                    <RadioButton
+                        android:layout_width="@dimen/match_parent"
+                        android:layout_height="@dimen/wrap_content"
+                        android:onClick="AssignScore"
+                        android:tag="@string/tag_answer_wrong"
+                        android:text="@string/question2_incorrectC" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!-- TRAVEL QUESTION 3 -->
+            <LinearLayout
+                android:layout_width="@dimen/match_parent"
+                android:layout_height="@dimen/wrap_content"
+                android:layout_marginVertical="@dimen/margin12dp"
+                android:background="@color/soft_green"
+                android:orientation="vertical">
+
+                <!-- Label of the question -->
+                <TextView
+                    android:layout_width="@dimen/match_parent"
+                    android:layout_height="@dimen/wrap_content"
+                    android:background="@color/light_green"
+                    android:padding="@dimen/margin8dp"
+                    android:text="@string/question3_label"
+                    android:textSize="@dimen/text_size_12sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/match_parent"
+                    android:layout_height="@dimen/wrap_content"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:background="@color/light_green"
+                    android:padding="@dimen/margin6dp"
+                    android:src="@drawable/drawableq3" />
+
+                <!-- Question and options to choose -->
+                <TextView
+                    android:layout_width="@dimen/match_parent"
+                    android:layout_height="@dimen/wrap_content"
+                    android:padding="@dimen/margin8dp"
+                    android:text="@string/question3"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="3">
+
+                    <RadioButton
+                        android:layout_width="@dimen/match_parent"
+                        android:layout_height="@dimen/wrap_content"
+                        android:onClick="AssignScore"
+                        android:tag="@string/tag_answer_correct"
+                        android:text="@string/question3_correct" />
+
+                    <RadioButton
+                        android:layout_width="@dimen/match_parent"
+                        android:layout_height="@dimen/wrap_content"
+                        android:onClick="AssignScore"
+                        android:tag="@string/tag_answer_wrong"
+                        android:text="@string/question3_incorrectA" />
+
+                    <RadioButton
+                        android:layout_width="@dimen/match_parent"
+                        android:layout_height="@dimen/wrap_content"
+                        android:onClick="AssignScore"
+                        android:tag="@string/tag_answer_wrong"
+                        android:text="@string/question3_incorrectB" />
+
+                    <RadioButton
+                        android:layout_width="@dimen/match_parent"
+                        android:layout_height="@dimen/wrap_content"
+                        android:onClick="AssignScore"
+                        android:tag="@string/tag_answer_wrong"
+                        android:text="@string/question3_incorrectC" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!-- TRAVEL QUESTION 4 -->
+            <LinearLayout
+                android:layout_width="@dimen/match_parent"
+                android:layout_height="@dimen/wrap_content"
+                android:layout_marginVertical="@dimen/margin12dp"
+                android:background="@color/soft_green"
+                android:orientation="vertical">
+
+                <!-- Label of the question -->
+                <TextView
+                    android:layout_width="@dimen/match_parent"
+                    android:layout_height="@dimen/wrap_content"
+                    android:background="@color/light_green"
+                    android:padding="@dimen/margin8dp"
+                    android:text="@string/question4_label"
+                    android:textSize="@dimen/text_size_12sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/match_parent"
+                    android:layout_height="@dimen/wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="@color/light_green"
+                    android:padding="@dimen/margin6dp"
+                    android:src="@drawable/drawableq4" />
+
+                <!-- Question and options to choose -->
+                <TextView
+                    android:layout_width="@dimen/match_parent"
+                    android:layout_height="@dimen/wrap_content"
+                    android:padding="@dimen/margin8dp"
+                    android:text="@string/question4"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <RadioGroup
+                    android:layout_width="@dimen/match_parent"
+                    android:layout_height="@dimen/wrap_content"
+                    android:tag="4">
+
+                    <RadioButton
+                        android:layout_width="@dimen/match_parent"
+                        android:layout_height="@dimen/wrap_content"
+                        android:onClick="AssignScore"
+                        android:tag="@string/tag_answer_wrong"
+                        android:text="@string/question4_incorrectA" />
+
+                    <RadioButton
+                        android:layout_width="@dimen/match_parent"
+                        android:layout_height="@dimen/wrap_content"
+                        android:onClick="AssignScore"
+                        android:tag="@string/tag_answer_correct"
+                        android:text="@string/question4_correct" />
+
+                    <RadioButton
+                        android:layout_width="@dimen/match_parent"
+                        android:layout_height="@dimen/wrap_content"
+                        android:onClick="AssignScore"
+                        android:tag="@string/tag_answer_wrong"
+                        android:text="@string/question4_incorrectB" />
+
+                    <RadioButton
+                        android:layout_width="@dimen/match_parent"
+                        android:layout_height="@dimen/wrap_content"
+                        android:onClick="AssignScore"
+                        android:tag="@string/tag_answer_wrong"
+                        android:text="@string/question4_incorrectC" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <!-- TRAVEL QUESTION 5 -->
+            <LinearLayout
+                android:layout_width="@dimen/match_parent"
+                android:layout_height="@dimen/wrap_content"
+                android:layout_marginVertical="@dimen/margin12dp"
+                android:background="@color/soft_green"
+                android:orientation="vertical">
+
+                <!-- Label of the question -->
+                <TextView
+                    android:layout_width="@dimen/match_parent"
+                    android:layout_height="@dimen/wrap_content"
+                    android:background="@color/light_green"
+                    android:padding="@dimen/margin8dp"
+                    android:text="@string/question5_label"
+                    android:textSize="@dimen/text_size_12sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/match_parent"
+                    android:layout_height="@dimen/wrap_content"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:background="@color/light_green"
+                    android:padding="@dimen/margin6dp"
+                    android:src="@drawable/drawableq5" />
+
+                <!-- Question and options to choose -->
+                <TextView
+                    android:layout_width="@dimen/match_parent"
+                    android:layout_height="@dimen/wrap_content"
+                    android:padding="@dimen/margin8dp"
+                    android:text="@string/question5"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <RadioGroup
+                    android:layout_width="@dimen/match_parent"
+                    android:layout_height="@dimen/wrap_content"
+                    android:tag="5">
+
+                    <RadioButton
+                        android:layout_width="@dimen/match_parent"
+                        android:layout_height="@dimen/wrap_content"
+                        android:onClick="AssignScore"
+                        android:tag="@string/tag_answer_correct"
+                        android:text="@string/question5_correct" />
+
+                    <RadioButton
+                        android:layout_width="@dimen/match_parent"
+                        android:layout_height="@dimen/wrap_content"
+                        android:onClick="AssignScore"
+                        android:tag="@string/tag_answer_wrong"
+                        android:text="@string/question5_incorrectA" />
+
+                    <RadioButton
+                        android:layout_width="@dimen/match_parent"
+                        android:layout_height="@dimen/wrap_content"
+                        android:onClick="AssignScore"
+                        android:tag="@string/tag_answer_wrong"
+                        android:text="@string/question5_incorrectB" />
+
+                    <RadioButton
+                        android:layout_width="@dimen/match_parent"
+                        android:layout_height="@dimen/wrap_content"
+                        android:onClick="AssignScore"
+                        android:tag="@string/tag_answer_wrong"
+                        android:text="@string/question5_incorrectC" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <!-- Score button -->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin12dp"
+                android:background="@color/light_green"
+                android:onClick="quizSummary"
+                android:text="@string/finalScore" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
